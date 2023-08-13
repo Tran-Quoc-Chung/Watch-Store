@@ -2,7 +2,7 @@
     margin: 70px 0;
     background-image: url('http://mauweb.monamedia.net/dongho/wp-content/uploads/2018/03/movement-gears-background.jpg');
     width: 100%;
-    height: 250px;
+    height: 200px;
     color: #f5eeee;
     display: flex;
     justify-content: center;
@@ -19,9 +19,10 @@
     display: flex;
     width: 520px;
     height: min-content;
+    justify-content: center;
 }
 .content p{
-    font-size: 1.1rem;
+    font-size: 16px;
     font-weight: lighter;
     margin-top: -20px;
     color: #aeaaaa;

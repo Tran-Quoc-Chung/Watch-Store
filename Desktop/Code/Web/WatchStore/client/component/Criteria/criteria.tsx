@@ -10,7 +10,7 @@ function Criteria() {
       <div className={styles.content}>
         <div className={styles.icon}><FontAwesomeIcon icon={faTruck}  /></div>
         <div>
-          <h1>Miễn Phí Giao Hàng</h1>
+          <h2>Miễn Phí Giao Hàng</h2>
           <p>
           Lorem ipsum dolor sit amet, consectetuer
           </p>
@@ -19,7 +19,7 @@ function Criteria() {
       <div className={styles.content}>
         <div className={styles.icon}><FontAwesomeIcon icon={faGift}  /></div>
         <div>
-          <h1>Quà Tặng Đặc Biệt</h1>
+          <h2>Quà Tặng Đặc Biệt</h2>
           <p>
           Lorem ipsum dolor sit amet, consectetuer
           </p>
@@ -28,7 +28,7 @@ function Criteria() {
       <div className={styles.content}>
         <div className={styles.icon}><FontAwesomeIcon icon={faCoins}  /></div>
         <div>
-          <h1>Tiết Kiệm Khi Mua</h1>
+          <h2>Tiết Kiệm Khi Mua</h2>
           <p>
           Lorem ipsum dolor sit amet, consectetuer
           </p>

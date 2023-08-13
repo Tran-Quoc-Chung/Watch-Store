@@ -1,9 +1,8 @@
 .container {
     margin: 0;
     padding: 0;
-    height: 90px;
-    width: 100%;
-    background-color: none;
+    height: 85px;
+    background-color: #000000;
     font-size: 20px;
     letter-spacing: .02em;
     text-transform: uppercase;
@@ -17,16 +16,20 @@
     justify-content: center;
     z-index: 1000;
     position: relative;
+    transition: 0.5s ease-in-out;
+    margin-top: -8px;
+    width: 100%;
 
 }
 
 .navlogo {
-    height: 90px;
-    width: 250px;
+    height: 75px;
+    width: 220px;
 }
 
 .navlogo img {
-    margin-top: 13px;
+    margin-top: -2px;
+    transition: 0.5s ease-in-out;
 }
 
 .navtitle {
@@ -34,6 +37,7 @@
     box-sizing: border-box;
     height: 40px;
     color: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
 
 }
 
@@ -48,8 +52,10 @@
 }
 .navtitle li {
     display: inline;
+    transition: 0.2s ease-in;
     margin-right: 23px;
-    border-right: 1px solid white;
+    border-right: 2px solid #806b6b;
+
 
 }
 
@@ -59,8 +65,9 @@
 
 
 .navicon {
-    width: 198px;
-    height: 59px;
+    width: 190px;
+    height: 55px;
+    margin-top: -9px;
 
 }
 
@@ -90,5 +97,25 @@
     background-color: #000000;
     z-index: 1000;
     top: 0;
-    
+    height: 65px;
+    width: 99%;
+
+}
+.scrolled .navlogo img{
+    height: 50px;
+    width: 130px;
+    margin-top: 20px;
+}
+.scrolled .navtitle{
+margin-top: -2px;
+font-size: 15px;
+}
+.scrolled .navicon {
+    width: 190px;
+    height: 55px;
+    margin-top: -2px;
+
+}
+.homepage{
+background-color: transparent;
 }

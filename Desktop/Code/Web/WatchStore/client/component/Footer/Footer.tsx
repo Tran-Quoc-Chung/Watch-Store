@@ -12,8 +12,8 @@ const Footer = () => {
       <div className={`${styles.info} ${styles.desc}`} >
         <Image
           src={logo}
-          width={200}
-          height={63}
+          width={170}
+          height={53}
           alt='Not found'
         />
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet ....</p>
@@ -24,7 +24,7 @@ const Footer = () => {
         <p>© Website fullstack.</p>
       </div>
       <div className={`${styles.info} ${styles.contact}`}>
-        <h2>THÔNG TIN LIÊN HỆ</h2>
+        <h3>THÔNG TIN LIÊN HỆ</h3>
         <p>01 TP Thủ Đức, TP Hồ Chí Minh, Việt Nam</p>
         <p>034 123 3210</p>
         <p>admin@gmail.com</p>
