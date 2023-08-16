@@ -5,8 +5,8 @@
     justify-content: center;
 }
 .product{
-    width: 295px;
-    height: 406px;
+    width: 280px;
+    height: 400px;
     margin: 7px 15px 7px 15px;
     transition: transform 1s ease;
     position: relative;
@@ -26,7 +26,7 @@
     text-decoration: none;
     color: #333;
     height: 45px;
-    font-size: 1rem;
+    font-size: 15px;
 }
 .tag{
     height: 11px;
@@ -35,15 +35,17 @@
 }
 .price{
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 16px;
     height: 24px;
     width: auto;
-    margin-top: 8px;
+    margin-top: 0px;
 }
 .desc a:hover{
     color:yellowgreen
 }
 .images{
+    height: 278px;
+    width: 278px;
     overflow:hidden ;
     justify-content: center;
 }

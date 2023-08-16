@@ -73,8 +73,8 @@
 
 .navicon ul {
     white-space: nowrap;
-    height: 44px;
-    width: 26px;
+    height: 35px;
+    width: 19px;
 
 }
 
@@ -98,7 +98,7 @@
     z-index: 1000;
     top: 0;
     height: 65px;
-    width: 99%;
+    width: 100%;
 
 }
 .scrolled .navlogo img{

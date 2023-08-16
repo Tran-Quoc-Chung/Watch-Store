@@ -19,17 +19,20 @@ const Navbar = () => {
             setScrolled(true);//show
             setHomepage(false)
             console.log("1")
-        } else  if(window.scrollY === 0 && currentPage){
+        } else  if(window.scrollY === 0 && currentPage==='/'){
             setScrolled(false);
             setHomepage(true);
+            console.log("currentPage",currentPage)
             console.log("2")
-        }else  {
+        }else if(!currentPage && window.scrollY === 0  ) {
             setHomepage(false);
+            setScrolled(false)
             console.log("3")
         }
     };
     useEffect(() => {
         if (currentPage === '/') {
+            
             setHomepage(true)
         } else {
             setHomepage(false)

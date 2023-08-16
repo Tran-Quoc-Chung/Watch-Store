@@ -1,7 +1,7 @@
 import Navbar from '@/component/navbar/Navbar'
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter,Roboto } from 'next/font/google'
+import { Inter, Roboto } from 'next/font/google'
 import Footer from '@/component/Footer/Footer';
 
 const inter = Inter({ subsets: ['latin'] })
@@ -24,10 +24,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={roboto.className}>
-        <Navbar/>
-        {children}
-        <Footer/>
+        <Navbar />
+        <main>{children}</main>
       </body>
+      <footer>
+        <Footer/>
+      </footer>
+
     </html>
   )
 }
