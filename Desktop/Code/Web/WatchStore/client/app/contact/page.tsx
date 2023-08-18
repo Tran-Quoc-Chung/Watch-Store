@@ -8,8 +8,8 @@ const Contact = () => {
     <div className={styles.container}>
       <div className={styles.image}>
         <Image src={Img} 
-                width={800}
-                height={340}
+                width={1519}
+                height={800}
                 alt='Not Found'/>
       </div>
       <div className={styles.layer}>
