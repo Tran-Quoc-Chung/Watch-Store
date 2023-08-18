@@ -11,8 +11,8 @@ const SingleProduct = (props) => {
         <div className={styles.images}>
           <Image
             src={props.src}
-            width={277}
-            height={277}
+            width={300}
+            height={300}
             alt='Not found'
           />
         </div>

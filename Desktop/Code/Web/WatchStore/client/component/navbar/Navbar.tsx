@@ -10,10 +10,12 @@ import { usePathname } from 'next/navigation';
 import Modal from '../modal'
 import RegisterModal from '../registerModal'
 import ForgotPassModal from '../forgotpass'
+import Link from 'next/link'
 
 
 const Navbar = () => {
     const currentPage = usePathname();  
+
     const [homepage,setHomepage]=useState(false)
     const [scrolled, setScrolled] = useState(false);
     const [showModal,setShowModal]=useState(false)
@@ -24,20 +26,18 @@ const Navbar = () => {
         if (window.scrollY > 0 && currentPage ) {
             setScrolled(true);//show
             setHomepage(false)
-            console.log("1")
         } else  if(window.scrollY === 0 && currentPage==='/'){
             setScrolled(false);
             setHomepage(true);
-            console.log("currentPage",currentPage)
-            console.log("2")
+
         }else if(!currentPage && window.scrollY === 0  ) {
             setHomepage(false);
             setScrolled(false)
-            console.log("3")
         }
     };
-    useEffect(() => {
+    React.useEffect(() => {
         if (currentPage === '/') {
+            
             setHomepage(true)
         } else {
             setHomepage(false)
@@ -49,48 +49,50 @@ const Navbar = () => {
     }, []);
     return (
         <div className= {` ${homepage ? styles.homepage : ''} ${styles.container} ${ scrolled ? styles.scrolled : ''} `}>
-            <div className={styles.navlogo}>
-                    <Image
+            <div className={styles.navlogo} >
+                <a href='/'>
+                <Image
                         src={logo}
-                        width={185}
-                        height={65}
+                        width={150}
+                        height={55}
                         alt="Logo not found"
                     />
+                    </a>
             </div>
             <div className={styles.navtitle}>
                 <ul >
                     <li>
-                        <a>
+                        <a href='/introducation'>
                             <span className={styles.border_right}>Giới thiệu</span>
                         </a>
                     </li>
                     <li>
-                        <a>
+                        <a href='/menwatch'>
                             <span className={styles.border_right}>Đồng hồ nam</span>
                         </a>
                     </li>
                     <li>
-                        <a>
+                        <a href='/womenwatch'>
                             <span className={styles.border_right}>Đồng hồ nữ</span>
                         </a>
                     </li>
                     <li>
-                        <a>
+                        <a href='/couplewatch'>
                             <span className={styles.border_right}>Đồng hồ đôi</span>
                         </a>
                     </li>
                     <li>
-                        <a>
+                        <a href='/accessory'>
                             <span className={styles.border_right}>Phụ kiện</span>
                         </a>
                     </li>
                     <li>
-                        <a>
+                        <a href='/blog'>
                             <span className={styles.border_right}>Tin tức</span>
                         </a>
                     </li>
                     <li>
-                        <a>
+                        <a href='/contact'>
                             <span >Liên hệ</span>
                         </a>
                     </li>

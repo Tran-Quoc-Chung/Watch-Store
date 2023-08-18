@@ -33,8 +33,8 @@ function SliderProduct( props) {
                     <div className={styles.images}>
                         <Image
                             src={props.src}
-                            width={277}
-                            height={277}
+                            width={250}
+                            height={250}
                             alt='Not found'
                         />
                     </div>
@@ -49,8 +49,8 @@ function SliderProduct( props) {
                     <div className={styles.images}>
                         <Image
                             src={props.src}
-                            width={277}
-                            height={277}
+                            width={250}
+                            height={250}
                             alt='Not found'
                         />
                     </div>
@@ -65,8 +65,8 @@ function SliderProduct( props) {
                     <div className={styles.images}>
                         <Image
                             src={props.src}
-                            width={277}
-                            height={277}
+                            width={250}
+                            height={250}
                             alt='Not found'
                         />
                     </div>
@@ -81,8 +81,8 @@ function SliderProduct( props) {
                     <div className={styles.images}>
                         <Image
                             src={props.src}
-                            width={277}
-                            height={277}
+                            width={250}
+                            height={250}
                             alt='Not found'
                         />
                     </div>
@@ -97,8 +97,8 @@ function SliderProduct( props) {
                     <div className={styles.images}>
                         <Image
                             src={props.src}
-                            width={277}
-                            height={277}
+                            width={250}
+                            height={250}
                             alt='Not found'
                         />
                     </div>
@@ -113,8 +113,8 @@ function SliderProduct( props) {
                     <div className={styles.images}>
                         <Image
                             src={props.src}
-                            width={277}
-                            height={277}
+                            width={250}
+                            height={250}
                             alt='Not found'
                         />
                     </div>
@@ -129,8 +129,8 @@ function SliderProduct( props) {
                     <div className={styles.images}>
                         <Image
                             src={props.src}
-                            width={277}
-                            height={277}
+                            width={250}
+                            height={250}
                             alt='Not found'
                         />
                     </div>
@@ -145,8 +145,8 @@ function SliderProduct( props) {
                     <div className={styles.images}>
                         <Image
                             src={props.src}
-                            width={277}
-                            height={277}
+                            width={250}
+                            height={250}
                             alt='Not found'
                         />
                     </div>
@@ -161,8 +161,8 @@ function SliderProduct( props) {
                     <div className={styles.images}>
                         <Image
                             src={props.src}
-                            width={277}
-                            height={277}
+                            width={250}
+                            height={250}
                             alt='Not found'
                         />
                     </div>
