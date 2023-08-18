@@ -3,13 +3,15 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    position: relative;
 }
 .product{
     width: 280px;
-    height: 400px;
+    height: 390px;
     margin: 7px 15px 7px 15px;
     transition: transform 1s ease;
     position: relative;
+    border: 1px solid transparent;
 }
 
 .desc{
@@ -61,14 +63,14 @@
     transform: scale(1.1);
 }
 .product:hover{
-    border: 2px dashed rgb(234, 204, 231);
+    border: 1px dashed rgb(234, 204, 231);
 }
 .icon{
     position: absolute;
-    width: 10px;
-    font-size: 35px;
-    color: black;
-    margin-left: -270px;
+    width: 7px;
+    font-size: 31px;
+    color: #464040;
+    margin-left: -250px;
     margin-top: -107px;
     cursor: pointer;
     visibility: hidden;

@@ -6,10 +6,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react'
 import SingleProduct from '@/component/SingleProduct/singleProduct';
 import img from '../../public/dong-ho-tissot-t41.1.183.34-nu-tu-dong-day-inox-600x600.jpg'
+import Category from '@/component/category/category';
 
 
 const MenWatch = () => {
-  const [isOpen,setIsOpen]=useState(false)
+  const [isOpen,setIsOpen]=React.useState(false)
   return (
     <div className={styles.container}>
       <div className={styles.header}>
@@ -32,29 +33,7 @@ const MenWatch = () => {
 
       <div className={styles.listproduct}>
         <div className={styles.category}>
-          <div className={styles.titlecategory}>
-            <h4>Danh mục sản phẩm</h4>
-          </div>
-          <div className={ `${isOpen ? styles.toogleopen : ''} ${styles.listcategory}`}>
-            <ul >
-              <li  className={styles.listmenu}>Đồng hồ nam</li>
-              <li className={styles.listmenu}>Đồng hồ nữ</li>
-              <li className={styles.listmenu}>Đồng hồ đôi</li>
-              <li className={styles.listmenu }> Phụ kiện
-                <button className={styles.toggle} onClick={()=>setIsOpen(!isOpen)}>
-                <FontAwesomeIcon icon={faCaretDown}  />
-                </button>
-                <ul className={`${isOpen ? styles.listdetail : ''} ${styles.menutoogle}`}>
-                  <li>Dây Da Hirsch</li>
-                  <li>Dây Da ZRC</li>
-                  <li>Hộp Đồng Hồ</li>
-                  <li>D.Vụ In Logo Lên Đồng Hồ</li>
-                  <li>Khắc Laser Lên Đồng Hồ</li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-
+          <Category/>
         </div>
         <div className={styles.product}>
           <SingleProduct src={img} />

@@ -23,13 +23,17 @@
 }
 
 .navlogo {
+    display: flex;
     height: 75px;
     width: 220px;
+    align-items: center;
+    margin-top: 11px;
 }
 
 .navlogo img {
     margin-top: -2px;
     transition: 0.5s ease-in-out;
+    cursor: pointer;
 }
 
 .navtitle {
@@ -55,8 +59,10 @@
     transition: 0.2s ease-in;
     margin-right: 23px;
     border-right: 2px solid #806b6b;
-
-
+}
+.navtitle a{
+    text-decoration: none;
+    color:rgba(255, 255, 255, 0.8); ;
 }
 
 .navtitle li:last-child {
@@ -102,9 +108,9 @@
 
 }
 .scrolled .navlogo img{
-    height: 50px;
-    width: 130px;
-    margin-top: 20px;
+    height: 40px;
+    width: 120px;
+    margin-top: 8px;
 }
 .scrolled .navtitle{
 margin-top: -2px;
