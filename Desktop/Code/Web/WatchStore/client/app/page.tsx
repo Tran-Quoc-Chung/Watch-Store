@@ -13,9 +13,11 @@ import Content from '@/component/content/content';
 import CoupleWatch from '@/component/couplewatch/couplewatch';
 import Accessory from '@/component/accessory/accessory';
 import Infodetail from '@/component/infodetail/infodetail';
+import { useState } from 'react';
 
 export default function Home() {
-
+  const [showModal, setShowModal] = useState(false);
+  const [showRegisterModal, setRegisterShowModal] = useState(false);
   return (
     <div className={styles.container}>
       <Slider />
